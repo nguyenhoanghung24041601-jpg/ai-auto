@@ -11,11 +11,14 @@ Nhánh này được thiết kế như một môi trường làm việc học th
 
 ```text
 vnh-sgu/
+├── AGENTS.md                         # Tự động nạp RULES.md & skill ngay khi mở chat mới
 ├── RULES.md                          # Bộ 8 điều luật học thuật & chống bịa đặt (bắt buộc tuân thủ)
 ├── INIT_PROMPT.md                    # Prompt khởi tạo hoạt động + mẫu lệnh nhanh khi mở chat mới
 ├── SKILLS_AND_MCP.md                 # Phân tích skill suy luận chuẩn & đánh giá MCP Science cho VNH
-├── skills/
-│   └── vnh-sgu-academic/SKILL.md     # Skill đóng gói quy trình 4 bước CoV & 4 tác vụ trọng tâm
+├── requirements.txt                  # Thư viện Python cho PPTX và đọc PDF (python-pptx, pymupdf, pdfplumber)
+├── setup.sh                          # Script cài nhanh môi trường cho Cloud VM / Linux
+├── .agents/skills/vnh-sgu-academic/  # Skill chuẩn workspace (tự động nhận diện)
+├── skills/vnh-sgu-academic/SKILL.md  # Bản lưu skill để đồng bộ/save_skill giữa các tài khoản
 ├── exercises/                        # Lưu bài giải, bài tập thảo luận, đề cương tiểu luận theo môn
 ├── exam-prep/                        # Lưu đề cương ôn thi cuối kỳ, bảng so sánh, đề thi thử
 ├── presentations/                    # Lưu dàn ý thuyết trình, code Python (PPTX) & Slide HTML5
